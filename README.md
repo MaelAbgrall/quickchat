@@ -14,8 +14,14 @@ You will need Node JS
 
 ## To start the app:
 Fist you need to start the host program
-type in your terminal : node /path/server.js
-then client(s): node /path/client.js
+type in your terminal : 
+```bash
+node /path/server.js
+```
+then client(s): 
+```bash
+node /path/client.js
+```
 
 In the client chat, you will need to connect to the host:
 ```bash
