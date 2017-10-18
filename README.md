@@ -11,22 +11,10 @@ I'll update this project during my free time. Goal is to finish this app correct
 
 ## Installation
 You will need Node JS before setting up!
-shell script to install dependencies
+then run:
+- npm install vorpal
+- npm install ip
 
-on linux:
-```bash
-./configure.sh
-```
-
-on Windows:
-```shell
-setup.cmd
-```
-
-on mac:
-```
-why do you use mac?
-```
 
 ### To start the app:
 #### Server

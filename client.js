@@ -62,7 +62,7 @@ else
   HOST = '127.0.0.1';
 }
 
-const client = net.createConnection(PORT, HOST, () => {
+const client = net.createConnection({HOST: HOST, port: PORT}, () => {
   console.log('connected to server!');
 });
 
