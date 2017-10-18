@@ -2,40 +2,57 @@
 Quick IRC chat done in nodeJS during school's practical work.
 
 # Information & current build
-I did this during a school's practical work of 3h (I actually never used node js before), so it's not working as expected for now.
-What it can do:
+I did this during a school's practical work of 4h (I actually never used node js before), so it's not working as expected for now.
+What it can do for now:
 - Connect to an host (server.js)
-- Do some fancy stuff in command line
+- chat with multiple users on the host
 
-I'll update this project during my free time. Goal is to finish this app correctly (You can connect to the host with specific IP adress, multiple users, and even chat room if I've time)
+I'll update this project during my free time. Goal is to finish this app correctly (better UI, skip use of "s" command from Vorpal, etc)
 
 # Installation
-You will need Node JS
+You will need Node JS before setting up!
+shell script to install dependencies & setting up "account"
+on linux:
+```bash
+./configure.sh
+```
+
+on Windows:
+```shell
+setup.cmd
+```
+
+on mac:
+```
+why do you use mac?
+```
 
 ## To start the app:
+### Server
 Fist you need to start the host program
 type in your terminal : 
 ```bash
 node /path/server.js
 ```
-then client(s): 
+if you want more option on server start up, just add on command line:
 ```bash
-node /path/client.js
+node /path/server.js Chat_room_name PORT
 ```
+please note that room's name is just informative.
 
-In the client chat, you will need to connect to the host:
+### Client(s)
+same command line: 
 ```bash
-connect [IP], [port]
+node /path/client.js username
+```
+By default you will be connected on localhost, if your chat server is hosted elsewere:
+```bash
+node /path/client.js username PORT HOST
 ```
 
 and it's done!
 
-don't forget to disconnect
-```bash
-disconnect
-```
-
-Quitting the app is not same as disconnecting
+don't forget to quit when you're done on client
 ```bash
 quit
 ```
@@ -50,3 +67,10 @@ For more information about Vorpal commands
 ```bash
 help
 ```
+
+# Libraries / Sources
+This application use the following libraries:
+- NodeJS
+- net (included in Node)
+- Vorpal
+- ip
