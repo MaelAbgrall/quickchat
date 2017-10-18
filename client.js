@@ -4,7 +4,7 @@ const vorpal = require('vorpal')();
 //we get port and host from argument line an cast port into a number
 const username = process.argv[2];
 var PORT = Number(process.argv[3]);
-const HOST = process.argv[4];
+var HOST = process.argv[4];
 
 //vorpal commands
 vorpal
@@ -56,7 +56,13 @@ else
   PORT = 8080;
 }
 
-const client = net.createConnection(PORT, () => {
+if ( typeof HOSTT !== 'undefined' && HOST ){}
+else
+{
+  HOST = '127.0.0.1';
+}
+
+const client = net.createConnection(PORT, HOST, () => {
   console.log('connected to server!');
 });
 
