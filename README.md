@@ -2,7 +2,7 @@
 Quick IRC chat done in nodeJS during school's practical work.
 
 ## Information & current build
-I did this during a school's practical work of 4h (I actually never used node js before), so it's not working as expected for now.
+I did this during a school's practical work of 4h, so it's not working as expected for now.
 What it can do for now:
 - Connect to an host (server.js)
 - chat with multiple users on the host
