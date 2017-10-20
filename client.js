@@ -7,9 +7,13 @@ var myHost = '127.0.0.1';
 //we get port and host from argument line an cast port into a number
 const username = process.argv[2];
 if(process.argv.length>3){
-  myPort = Number(process.argv[3]);
-  myHost = process.argv[4];
+  myPort = Number(process.argv[4]);
 }
+if(process.argv.length>4){
+  myHost = process.argv[3];
+}
+
+
 //vorpal commands
 vorpal
   .command('send [words...]')
